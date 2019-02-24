@@ -60,12 +60,21 @@ namespace PersonalInfoForm
                 this.writeInfo("Name/Surname is required.");
                 return false;
             }
-            string pattern = $"^[A-ZŠČŘŽÚ]+(([',. -][a-zA-Zěščřžýáíéúů ])?[a-zA-Zěščřžýáíéúů]*)*";
-            Regex mRegex = new Regex(pattern);
+            string namePattern = $"^[a-zščřžúA-ZŠČŘŽÚ]+(([',. -][a-zA-Zěščřžýáíéúůç ])?[a-zA-Zěščřžýáíéúůç]*)*";
+            Regex mRegex = new Regex(namePattern);
             string rest = mRegex.Replace(name, "", 1);
             if (rest.Length > 0)
             {
-                this.writeInfo($"Invalid character: \"{rest[0]}\"");
+                string firstLowerPattern = $"^[a-zščřžú]";
+                mRegex = new Regex(firstLowerPattern);
+                if (mRegex.IsMatch(name))
+                {
+                    this.writeInfo("Name / Surname must start with Capital letter.");
+                }
+                else
+                {
+                    this.writeInfo($"Invalid character: \"{rest[0]}\"");
+                }
                 return false;
             }
             else
@@ -109,7 +118,8 @@ namespace PersonalInfoForm
             if (invalidFields.Length > 0)
             {
                 this.writeInfo($"Invalid fields: {String.Join(", ", invalidFields)}");
-            } else
+            }
+            else
             {
                 if (infoDisplayForm.IsDisposed)
                 {
