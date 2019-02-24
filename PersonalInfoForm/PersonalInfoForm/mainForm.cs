@@ -16,5 +16,10 @@ namespace PersonalInfoForm
         {
             InitializeComponent();
         }
+
+        private void nameRichTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
