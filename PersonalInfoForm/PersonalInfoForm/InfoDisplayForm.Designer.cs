@@ -32,10 +32,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.emailRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.ageRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.surnameRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.nameRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.surnameTextBox = new System.Windows.Forms.TextBox();
+            this.ageTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label4
@@ -74,59 +74,51 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Name";
             // 
-            // emailRichTextBox
+            // nameTextBox
             // 
-            this.emailRichTextBox.Location = new System.Drawing.Point(92, 120);
-            this.emailRichTextBox.MaxLength = 60;
-            this.emailRichTextBox.Name = "emailRichTextBox";
-            this.emailRichTextBox.ReadOnly = true;
-            this.emailRichTextBox.Size = new System.Drawing.Size(255, 30);
-            this.emailRichTextBox.TabIndex = 11;
-            this.emailRichTextBox.Text = "";
+            this.nameTextBox.Location = new System.Drawing.Point(99, 12);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.ReadOnly = true;
+            this.nameTextBox.Size = new System.Drawing.Size(203, 22);
+            this.nameTextBox.TabIndex = 16;
             // 
-            // ageRichTextBox
+            // surnameTextBox
             // 
-            this.ageRichTextBox.Location = new System.Drawing.Point(92, 84);
-            this.ageRichTextBox.MaxLength = 3;
-            this.ageRichTextBox.Name = "ageRichTextBox";
-            this.ageRichTextBox.ReadOnly = true;
-            this.ageRichTextBox.Size = new System.Drawing.Size(66, 30);
-            this.ageRichTextBox.TabIndex = 10;
-            this.ageRichTextBox.Text = "";
+            this.surnameTextBox.Location = new System.Drawing.Point(99, 48);
+            this.surnameTextBox.Name = "surnameTextBox";
+            this.surnameTextBox.ReadOnly = true;
+            this.surnameTextBox.Size = new System.Drawing.Size(203, 22);
+            this.surnameTextBox.TabIndex = 17;
             // 
-            // surnameRichTextBox
+            // ageTextBox
             // 
-            this.surnameRichTextBox.Location = new System.Drawing.Point(92, 48);
-            this.surnameRichTextBox.MaxLength = 40;
-            this.surnameRichTextBox.Name = "surnameRichTextBox";
-            this.surnameRichTextBox.ReadOnly = true;
-            this.surnameRichTextBox.Size = new System.Drawing.Size(161, 30);
-            this.surnameRichTextBox.TabIndex = 9;
-            this.surnameRichTextBox.Text = "";
+            this.ageTextBox.Location = new System.Drawing.Point(99, 82);
+            this.ageTextBox.Name = "ageTextBox";
+            this.ageTextBox.ReadOnly = true;
+            this.ageTextBox.Size = new System.Drawing.Size(109, 22);
+            this.ageTextBox.TabIndex = 18;
             // 
-            // nameRichTextBox
+            // emailTextBox
             // 
-            this.nameRichTextBox.Location = new System.Drawing.Point(92, 12);
-            this.nameRichTextBox.MaxLength = 40;
-            this.nameRichTextBox.Name = "nameRichTextBox";
-            this.nameRichTextBox.ReadOnly = true;
-            this.nameRichTextBox.Size = new System.Drawing.Size(161, 30);
-            this.nameRichTextBox.TabIndex = 8;
-            this.nameRichTextBox.Text = "";
+            this.emailTextBox.Location = new System.Drawing.Point(99, 117);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.ReadOnly = true;
+            this.emailTextBox.Size = new System.Drawing.Size(203, 22);
+            this.emailTextBox.TabIndex = 19;
             // 
             // InfoDisplayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(385, 172);
+            this.ClientSize = new System.Drawing.Size(324, 172);
+            this.Controls.Add(this.emailTextBox);
+            this.Controls.Add(this.ageTextBox);
+            this.Controls.Add(this.surnameTextBox);
+            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.emailRichTextBox);
-            this.Controls.Add(this.ageRichTextBox);
-            this.Controls.Add(this.surnameRichTextBox);
-            this.Controls.Add(this.nameRichTextBox);
             this.Name = "InfoDisplayForm";
             this.Text = "Information Display";
             this.ResumeLayout(false);
@@ -140,9 +132,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox emailRichTextBox;
-        private System.Windows.Forms.RichTextBox ageRichTextBox;
-        private System.Windows.Forms.RichTextBox surnameRichTextBox;
-        private System.Windows.Forms.RichTextBox nameRichTextBox;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.TextBox surnameTextBox;
+        private System.Windows.Forms.TextBox ageTextBox;
+        private System.Windows.Forms.TextBox emailTextBox;
     }
 }
