@@ -79,7 +79,7 @@
             this.nameTextBox.Location = new System.Drawing.Point(99, 12);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.ReadOnly = true;
-            this.nameTextBox.Size = new System.Drawing.Size(203, 22);
+            this.nameTextBox.Size = new System.Drawing.Size(296, 22);
             this.nameTextBox.TabIndex = 16;
             // 
             // surnameTextBox
@@ -87,7 +87,7 @@
             this.surnameTextBox.Location = new System.Drawing.Point(99, 48);
             this.surnameTextBox.Name = "surnameTextBox";
             this.surnameTextBox.ReadOnly = true;
-            this.surnameTextBox.Size = new System.Drawing.Size(203, 22);
+            this.surnameTextBox.Size = new System.Drawing.Size(296, 22);
             this.surnameTextBox.TabIndex = 17;
             // 
             // ageTextBox
@@ -95,7 +95,7 @@
             this.ageTextBox.Location = new System.Drawing.Point(99, 82);
             this.ageTextBox.Name = "ageTextBox";
             this.ageTextBox.ReadOnly = true;
-            this.ageTextBox.Size = new System.Drawing.Size(109, 22);
+            this.ageTextBox.Size = new System.Drawing.Size(202, 22);
             this.ageTextBox.TabIndex = 18;
             // 
             // emailTextBox
@@ -103,14 +103,14 @@
             this.emailTextBox.Location = new System.Drawing.Point(99, 117);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.ReadOnly = true;
-            this.emailTextBox.Size = new System.Drawing.Size(203, 22);
+            this.emailTextBox.Size = new System.Drawing.Size(296, 22);
             this.emailTextBox.TabIndex = 19;
             // 
             // InfoDisplayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 172);
+            this.ClientSize = new System.Drawing.Size(426, 172);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.ageTextBox);
             this.Controls.Add(this.surnameTextBox);

@@ -78,9 +78,9 @@
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(280, 12);
+            this.submitButton.Location = new System.Drawing.Point(335, 12);
             this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(147, 53);
+            this.submitButton.Size = new System.Drawing.Size(147, 125);
             this.submitButton.TabIndex = 8;
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = true;
@@ -99,14 +99,14 @@
             this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker.Location = new System.Drawing.Point(105, 87);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(161, 22);
+            this.dateTimePicker.Size = new System.Drawing.Size(131, 22);
             this.dateTimePicker.TabIndex = 11;
             // 
             // nameTextBox
             // 
             this.nameTextBox.Location = new System.Drawing.Point(105, 12);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(161, 22);
+            this.nameTextBox.Size = new System.Drawing.Size(215, 22);
             this.nameTextBox.TabIndex = 12;
             this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
@@ -114,7 +114,7 @@
             // 
             this.surnameTextBox.Location = new System.Drawing.Point(105, 48);
             this.surnameTextBox.Name = "surnameTextBox";
-            this.surnameTextBox.Size = new System.Drawing.Size(161, 22);
+            this.surnameTextBox.Size = new System.Drawing.Size(215, 22);
             this.surnameTextBox.TabIndex = 13;
             this.surnameTextBox.TextChanged += new System.EventHandler(this.surnameTextBox_TextChanged);
             // 
@@ -122,7 +122,7 @@
             // 
             this.emailTextBox.Location = new System.Drawing.Point(105, 120);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(161, 22);
+            this.emailTextBox.Size = new System.Drawing.Size(215, 22);
             this.emailTextBox.TabIndex = 14;
             this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
@@ -130,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(440, 203);
+            this.ClientSize = new System.Drawing.Size(494, 203);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.surnameTextBox);
             this.Controls.Add(this.nameTextBox);
