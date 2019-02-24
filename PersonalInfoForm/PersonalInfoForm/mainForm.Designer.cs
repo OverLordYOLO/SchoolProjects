@@ -38,6 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.submitButton = new System.Windows.Forms.Button();
             this.invalidCharacterLabel = new System.Windows.Forms.Label();
+            this.infoLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // nameRichTextBox
@@ -129,11 +130,20 @@
             this.invalidCharacterLabel.Size = new System.Drawing.Size(0, 17);
             this.invalidCharacterLabel.TabIndex = 9;
             // 
-            // Form1
+            // infoLabel
+            // 
+            this.infoLabel.AutoSize = true;
+            this.infoLabel.Location = new System.Drawing.Point(18, 168);
+            this.infoLabel.Name = "infoLabel";
+            this.infoLabel.Size = new System.Drawing.Size(0, 17);
+            this.infoLabel.TabIndex = 10;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(431, 203);
+            this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.invalidCharacterLabel);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.label4);
@@ -144,7 +154,7 @@
             this.Controls.Add(this.ageRichTextBox);
             this.Controls.Add(this.surnameRichTextBox);
             this.Controls.Add(this.nameRichTextBox);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -163,6 +173,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.Label invalidCharacterLabel;
+        private System.Windows.Forms.Label infoLabel;
     }
 }
 
