@@ -30,7 +30,6 @@
         {
             this.nameRichTextBox = new System.Windows.Forms.RichTextBox();
             this.surnameRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.ageRichTextBox = new System.Windows.Forms.RichTextBox();
             this.emailRichTextBox = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,11 +38,12 @@
             this.submitButton = new System.Windows.Forms.Button();
             this.invalidCharacterLabel = new System.Windows.Forms.Label();
             this.infoLabel = new System.Windows.Forms.Label();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // nameRichTextBox
             // 
-            this.nameRichTextBox.Location = new System.Drawing.Point(94, 12);
+            this.nameRichTextBox.Location = new System.Drawing.Point(105, 12);
             this.nameRichTextBox.MaxLength = 40;
             this.nameRichTextBox.Name = "nameRichTextBox";
             this.nameRichTextBox.Size = new System.Drawing.Size(161, 30);
@@ -52,25 +52,16 @@
             // 
             // surnameRichTextBox
             // 
-            this.surnameRichTextBox.Location = new System.Drawing.Point(94, 48);
+            this.surnameRichTextBox.Location = new System.Drawing.Point(105, 48);
             this.surnameRichTextBox.MaxLength = 40;
             this.surnameRichTextBox.Name = "surnameRichTextBox";
             this.surnameRichTextBox.Size = new System.Drawing.Size(161, 30);
             this.surnameRichTextBox.TabIndex = 1;
             this.surnameRichTextBox.Text = "";
             // 
-            // ageRichTextBox
-            // 
-            this.ageRichTextBox.Location = new System.Drawing.Point(94, 84);
-            this.ageRichTextBox.MaxLength = 3;
-            this.ageRichTextBox.Name = "ageRichTextBox";
-            this.ageRichTextBox.Size = new System.Drawing.Size(66, 30);
-            this.ageRichTextBox.TabIndex = 2;
-            this.ageRichTextBox.Text = "";
-            // 
             // emailRichTextBox
             // 
-            this.emailRichTextBox.Location = new System.Drawing.Point(94, 120);
+            this.emailRichTextBox.Location = new System.Drawing.Point(105, 120);
             this.emailRichTextBox.MaxLength = 60;
             this.emailRichTextBox.Name = "emailRichTextBox";
             this.emailRichTextBox.Size = new System.Drawing.Size(255, 30);
@@ -100,9 +91,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 87);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 17);
+            this.label3.Size = new System.Drawing.Size(87, 17);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Age";
+            this.label3.Text = "Date of Birth";
             // 
             // label4
             // 
@@ -115,7 +106,7 @@
             // 
             // submitButton
             // 
-            this.submitButton.Location = new System.Drawing.Point(272, 12);
+            this.submitButton.Location = new System.Drawing.Point(280, 12);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(147, 53);
             this.submitButton.TabIndex = 8;
@@ -138,11 +129,20 @@
             this.infoLabel.Size = new System.Drawing.Size(0, 17);
             this.infoLabel.TabIndex = 10;
             // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker.Location = new System.Drawing.Point(105, 87);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(161, 22);
+            this.dateTimePicker.TabIndex = 11;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 203);
+            this.ClientSize = new System.Drawing.Size(440, 203);
+            this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.invalidCharacterLabel);
             this.Controls.Add(this.submitButton);
@@ -151,7 +151,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.emailRichTextBox);
-            this.Controls.Add(this.ageRichTextBox);
             this.Controls.Add(this.surnameRichTextBox);
             this.Controls.Add(this.nameRichTextBox);
             this.Name = "MainForm";
@@ -165,7 +164,6 @@
 
         private System.Windows.Forms.RichTextBox nameRichTextBox;
         private System.Windows.Forms.RichTextBox surnameRichTextBox;
-        private System.Windows.Forms.RichTextBox ageRichTextBox;
         private System.Windows.Forms.RichTextBox emailRichTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -174,6 +172,7 @@
         private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.Label invalidCharacterLabel;
         private System.Windows.Forms.Label infoLabel;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
     }
 }
 
