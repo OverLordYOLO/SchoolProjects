@@ -114,6 +114,7 @@
             this.surnameTextBox.Name = "surnameTextBox";
             this.surnameTextBox.Size = new System.Drawing.Size(161, 22);
             this.surnameTextBox.TabIndex = 13;
+            this.surnameTextBox.TextChanged += new System.EventHandler(this.surnameTextBox_TextChanged);
             // 
             // emailTextBox
             // 
@@ -121,6 +122,7 @@
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(161, 22);
             this.emailTextBox.TabIndex = 14;
+            this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
             // MainForm
             // 

@@ -17,7 +17,17 @@ namespace PersonalInfoForm
             InitializeComponent();
         }
 
-        private void nameRichTextBox_TextChanged(object sender, EventArgs e)
+        private void nameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void surnameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emailTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
