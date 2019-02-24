@@ -18,6 +18,13 @@ namespace PersonalInfoForm
         {
             InitializeComponent();
             infoDisplayForm = new InfoDisplayForm();
+            this.setDateBounds();
+        }
+
+        private void setDateBounds()
+        {
+            this.dateTimePicker.MaxDate = DateTime.Today.AddYears(-1);
+            this.dateTimePicker.MinDate = DateTime.Today.AddYears(-120);
         }
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)
@@ -99,7 +106,7 @@ namespace PersonalInfoForm
         private void submitButton_Click(object sender, EventArgs e)
         {
             string[] invalidFields = getInvalidFields();
-            if (invalidFields.Length > 0)
+            if (invalidFields.Length > 0 && false)
             {
                 this.writeInfo($"Invalid fields: {String.Join(", ", invalidFields)}");
             } else
@@ -108,7 +115,11 @@ namespace PersonalInfoForm
                 {
                     infoDisplayForm.Show();
                 }
-                
+                infoDisplayForm.setNameText(this.nameTextBox.Text);
+                infoDisplayForm.setSurnameText(this.surnameTextBox.Text);
+                infoDisplayForm.setEmailText(this.emailTextBox.Text);
+                string age = this.dateTimePicker.Text;
+                infoDisplayForm.setAgeText(age.ToString());
             }
         }
         private string[] getInvalidFields()
