@@ -36,7 +36,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.submitButton = new System.Windows.Forms.Button();
-            this.invalidCharacterLabel = new System.Windows.Forms.Label();
             this.infoLabel = new System.Windows.Forms.Label();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
@@ -113,14 +112,6 @@
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = true;
             // 
-            // invalidCharacterLabel
-            // 
-            this.invalidCharacterLabel.AutoSize = true;
-            this.invalidCharacterLabel.Location = new System.Drawing.Point(12, 168);
-            this.invalidCharacterLabel.Name = "invalidCharacterLabel";
-            this.invalidCharacterLabel.Size = new System.Drawing.Size(0, 17);
-            this.invalidCharacterLabel.TabIndex = 9;
-            // 
             // infoLabel
             // 
             this.infoLabel.AutoSize = true;
@@ -144,7 +135,6 @@
             this.ClientSize = new System.Drawing.Size(440, 203);
             this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.infoLabel);
-            this.Controls.Add(this.invalidCharacterLabel);
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -170,7 +160,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button submitButton;
-        private System.Windows.Forms.Label invalidCharacterLabel;
         private System.Windows.Forms.Label infoLabel;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
     }
