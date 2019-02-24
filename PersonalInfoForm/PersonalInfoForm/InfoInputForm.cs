@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PersonalInfoForm
 {
-    public partial class Form1 : Form
+    public partial class InfoInputForm : Form
     {
-        public Form1()
+        public InfoInputForm()
         {
             InitializeComponent();
         }
