@@ -58,7 +58,7 @@ namespace PersonalInfoForm
             string rest = mRegex.Replace(name, "", 1);
             if (rest.Length > 0)
             {
-                this.writeInfo($"Name/Surname contains invalid characters starting with: {rest[0]}");
+                this.writeInfo($"Invalid character: {rest[0]}");
                 return false;
             }
             else
@@ -77,6 +77,7 @@ namespace PersonalInfoForm
             try
             {
                 new System.Net.Mail.MailAddress(email);
+                this.writeInfo("");
                 return true;
             }
             catch (ArgumentException)
