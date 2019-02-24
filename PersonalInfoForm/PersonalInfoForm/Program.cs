@@ -16,7 +16,7 @@ namespace PersonalInfoForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InfoInputForm());
+            Application.Run(new MainForm());
         }
     }
 }
