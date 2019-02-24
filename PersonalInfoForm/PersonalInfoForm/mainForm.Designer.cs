@@ -38,6 +38,7 @@
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.surnameTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.authorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -126,11 +127,21 @@
             this.emailTextBox.TabIndex = 14;
             this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
+            // authorLabel
+            // 
+            this.authorLabel.AutoSize = true;
+            this.authorLabel.Location = new System.Drawing.Point(253, 198);
+            this.authorLabel.Name = "authorLabel";
+            this.authorLabel.Size = new System.Drawing.Size(233, 17);
+            this.authorLabel.TabIndex = 15;
+            this.authorLabel.Text = "Made by Matěj Kohútek - xkohm016";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 203);
+            this.ClientSize = new System.Drawing.Size(494, 219);
+            this.Controls.Add(this.authorLabel);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.surnameTextBox);
             this.Controls.Add(this.nameTextBox);
@@ -141,6 +152,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
             this.Text = "Information Input";
             this.ResumeLayout(false);
@@ -159,6 +171,7 @@
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.TextBox surnameTextBox;
         private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.Label authorLabel;
     }
 }
 
