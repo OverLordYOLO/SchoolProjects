@@ -65,7 +65,7 @@ namespace PersonalInfoForm
             string rest = mRegex.Replace(name, "", 1);
             if (rest.Length > 0)
             {
-                this.writeInfo($"Invalid character: {rest[0]}");
+                this.writeInfo($"Invalid character: \"{rest[0]}\"");
                 return false;
             }
             else
