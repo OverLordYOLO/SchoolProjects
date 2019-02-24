@@ -106,11 +106,15 @@ namespace PersonalInfoForm
         private void submitButton_Click(object sender, EventArgs e)
         {
             string[] invalidFields = getInvalidFields();
-            if (invalidFields.Length > 0 && false)
+            if (invalidFields.Length > 0)
             {
                 this.writeInfo($"Invalid fields: {String.Join(", ", invalidFields)}");
             } else
             {
+                if (infoDisplayForm.IsDisposed)
+                {
+                    infoDisplayForm = new InfoDisplayForm();
+                }
                 if (infoDisplayForm.Visible == false)
                 {
                     infoDisplayForm.Show();
@@ -118,7 +122,8 @@ namespace PersonalInfoForm
                 infoDisplayForm.setNameText(this.nameTextBox.Text);
                 infoDisplayForm.setSurnameText(this.surnameTextBox.Text);
                 infoDisplayForm.setEmailText(this.emailTextBox.Text);
-                string age = this.dateTimePicker.Text;
+                double hours = DateTime.Today.Subtract(DateTime.Parse(this.dateTimePicker.Text)).TotalDays;
+                double age = Math.Round(hours / 365, 1);
                 infoDisplayForm.setAgeText(age.ToString());
             }
         }
