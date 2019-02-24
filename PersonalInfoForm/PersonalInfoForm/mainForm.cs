@@ -60,7 +60,7 @@ namespace PersonalInfoForm
                 this.writeInfo("Name/Surname is required.");
                 return false;
             }
-            string namePattern = $"^[a-zščřžúA-ZŠČŘŽÚ]+(([',. -][a-zA-Zěščřžýáíéúůç ])?[a-zA-Zěščřžýáíéúůç]*)*";
+            string namePattern = $"^[A-ZŠČŘŽÚ]+(([',. -][a-zA-Zěščřžýáíéúůç ])?[a-zA-Zěščřžýáíéúůç]*)*";
             Regex mRegex = new Regex(namePattern);
             string rest = mRegex.Replace(name, "", 1);
             if (rest.Length > 0)
