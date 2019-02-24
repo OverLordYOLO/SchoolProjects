@@ -128,7 +128,7 @@
             this.Controls.Add(this.surnameRichTextBox);
             this.Controls.Add(this.nameRichTextBox);
             this.Name = "InfoDisplayForm";
-            this.Text = "InfoDisplayForm";
+            this.Text = "Information Display";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -155,7 +155,7 @@
             this.Controls.Add(this.surnameRichTextBox);
             this.Controls.Add(this.nameRichTextBox);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Information Input";
             this.ResumeLayout(false);
             this.PerformLayout();
 
