@@ -16,5 +16,21 @@ namespace PersonalInfoForm
         {
             InitializeComponent();
         }
+        public void setNameText(string text)
+        {
+            this.nameTextBox.Text = text;
+        }
+        public void setSurnameText(string text)
+        {
+            this.surnameTextBox.Text = text;
+        }
+        public void setEmailText(string text)
+        {
+            this.emailTextBox.Text = text;
+        }
+        public void setAgeText(string text)
+        {
+            this.ageTextBox.Text = text;
+        }
     }
 }
