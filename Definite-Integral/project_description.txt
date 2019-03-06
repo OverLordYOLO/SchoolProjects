@@ -1,0 +1,12 @@
+Výpočet určitého integrálu lichoběžníkovou metodou
+
+Vytvořte program, do kterého bude možné vkládat rovnici křivky max. 3. řádu
+(pomocí koeficientů), meze pro výpočet (hodní a spodní mez) a požadovanou
+přesnost výpočtu. Program následně provede výpočet určitého integrálu této
+funkce v uvedeném intervalu (plocha pod křivkou), zobrazí výsledek a rovněž
+průběh funkce v uvedeném intervalu. Alternativně lze doplnit i možnost volby
+počtu iterací výpočtu. Výsledky (graf, hodnota integrálu, rovnice funkce a meze)
+se ukládají do ASCII souboru na disk. Z programu je možné realizovat tisk grafu,
+rovnice křivky a výsledné hodnoty určitého integrálu.
+
+DEADLINE: 07/04/2019
