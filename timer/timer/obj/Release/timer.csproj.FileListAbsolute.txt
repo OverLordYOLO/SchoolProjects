@@ -1,0 +1,9 @@
+C:\Users\student\source\repos\timer\timer\bin\Release\timer.exe.config
+C:\Users\student\source\repos\timer\timer\bin\Release\timer.exe
+C:\Users\student\source\repos\timer\timer\bin\Release\timer.pdb
+C:\Users\student\source\repos\timer\timer\obj\Release\timer.Form1.resources
+C:\Users\student\source\repos\timer\timer\obj\Release\timer.Properties.Resources.resources
+C:\Users\student\source\repos\timer\timer\obj\Release\timer.csproj.GenerateResource.cache
+C:\Users\student\source\repos\timer\timer\obj\Release\timer.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\timer\timer\obj\Release\timer.exe
+C:\Users\student\source\repos\timer\timer\obj\Release\timer.pdb
