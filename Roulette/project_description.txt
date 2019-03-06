@@ -1,0 +1,10 @@
+Hra Ruleta
+
+Vytvořte program, který bude simulovat známou hru Ruleta. Grafické provedení
+a ovládání hry je čistě na řešiteli, podstatné však je, aby bylo možné sázet na
+konkrétní číslo, černá/červená, sudá/lichá. Výsledky jednotlivých her včetně
+vkladu do hry a výher se průběžně ukládají do souboru. Držte se obvyklých
+pravidel hry Ruleta schválených v ČR
+
+
+DEADLINE: 07/04/2019
